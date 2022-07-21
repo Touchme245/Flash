@@ -1,0 +1,33 @@
+
+from itertools import product
+k = 0
+for x in product("АРТОДСК",repeat = 5):
+  s = "".join(x)
+  if s[0] == "К":
+    k += 1
+print(k)
+
+
+
+from itertools import product
+k = 0
+for x in product("КОРГПЫ",repeat = 4):
+  s = "".join(x)
+  if "ПЫР" in s:
+    k += 1
+for x in product("КОРГПЫК",repeat = 5):
+  s = "".join(x)
+  if "ПЫР" in s:
+    k += 1
+print(k)
+
+
+
+from itertools import product
+k = 0
+for x in product("ГАЛОШИ",repeat = 4):
+  s = "".join(x)
+  if s[0] != "Ш" and s[-1] != "Г":
+    k += 1
+print(k)
+
