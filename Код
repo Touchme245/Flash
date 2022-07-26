@@ -1,4 +1,5 @@
-
+Номер 1
+способ 1
 from itertools import product
 k = 0
 for x in product("АРТОДСК",repeat = 5):
@@ -6,9 +7,21 @@ for x in product("АРТОДСК",repeat = 5):
   if s[0] == "К":
     k += 1
 print(k)
+способ 2
+alf = "АРТОДСК"
+k = 0
+for x1 in alf:
+    for x2 in alf:
+        for x3 in alf:
+            for x4 in alf:
+                for x5 in alf:
+                    if x1 == "К":
+                        k += 1
+print(k)
 
 
-
+Номер 2
+способ 1
 from itertools import product
 k = 0
 for x in product("КОРГПЫ",repeat = 4):
@@ -20,14 +33,43 @@ for x in product("КОРГПЫК",repeat = 5):
   if "ПЫР" in s:
     k += 1
 print(k)
-
-
-
+способ 2
+alf = "КОРГПЫ"
+k = 0
+for x1 in alf:
+    for x2 in alf:
+        for x3 in alf:
+            for x4 in alf:
+                s = x1+x2+x3+x4
+                if "ПЫР" in s:
+                    k += 1
+for x1 in alf:
+    for x2 in alf:
+        for x3 in alf:
+            for x4 in alf:
+                for x5 in alf:
+                    s = x1+x2+x3+x4+x5
+                    if "ПЫР" in s:
+                        k += 1
+print(k)
+Номер 3
+способ 1
 from itertools import product
 k = 0
 for x in product("ГАЛОШИ",repeat = 4):
   s = "".join(x)
   if s[0] != "Ш" and s[-1] != "Г":
     k += 1
+print(k)
+способ 2
+alf = "ГАЛОШИ"
+k = 0
+for x1 in alf:
+    for x2 in alf:
+        for x3 in alf:
+            for x4 in alf:
+                if x1 != "Ш" and x4 != "Г"
+                    k += 1
+
 print(k)
 
